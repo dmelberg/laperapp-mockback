@@ -1,62 +1,67 @@
 {
   "users": [
-    { "id": 1, 
-      "email": "u1@u1.com", 
-      "courses": [{
-        "id": 1,
-        "name": "Calculo I",
-        "pass": 4.0,
-        "goal": 5.0,
-        "grade": null,
-        "evals": [{
-          "id": 1,
-          "name": "I1",
-          "pass": 4.0,
-          "goal": 5.0,
-          "grade": 6.5},
-        {
-          "id": 2,
-          "name": "I2",
-          "pass": 4.0,
-          "goal": 5.0,
-          "grade": null
-        },
-        {
-          "id": 3,
-          "name": "EX",
-          "pass": 4.0,
-          "goal": 5.0,
-          "grade": null
-        }]
-      },
-      {
-        "id": 2,
-        "name": "Algebra Lineal",
-        "pass": 4.0,
-        "goal": 5.0,
-        "grade": null,
-        "evals": [{
-          "id": 1,
-          "name": "I1",
-          "pass": 4.0,
-          "goal": 5.0,
-          "grade": 3.3},
-        {
-          "id": 2,
-          "name": "I2",
-          "pass": 4.0,
-          "goal": 5.0,
-          "grade": 4.1
-        },
-        {
-          "id": 3,
-          "name": "EX",
-          "pass": 4.0,
-          "goal": 5.0,
-          "grade": null
-        }]
-      }
-    ]
+    {
+      "id": 1, 
+      "email": "u1@u1.com"
+    },
+    {
+      "id": 2, 
+      "email": "u2@u2.com"
     }
-  ]
+  ],
+  "courses": [{
+    "id": 1,
+    "user_id": 1,
+    "name": "Calculo I",
+    "pass": 4.0,
+    "goal": 5.0,
+    "grade": null
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "name": "Algebra Lineal",
+    "pass": 4.0,
+    "goal": 5.0,
+    "grade": null
+  }],
+  "evals": [{
+    "id": 1,
+    "course_id": 1,
+    "name": "I1",
+    "pass": 4.0,
+    "goal": 5.0,
+    "grade": 6.5},
+  {
+    "id": 2,
+    "course_id": 1,
+    "name": "I2",
+    "pass": 4.0,
+    "goal": 5.0,
+    "grade": null
+  },
+  {
+    "id": 3,
+    "course_id": 1,
+    "name": "EX",
+    "pass": 4.0,
+    "goal": 5.0,
+    "grade": null
+  },
+  {
+    "id": 4,
+    "course_id": 2,
+    "name": "I1",
+    "pass": 4.0,
+    "goal": 5.0,
+    "grade": 3.0
+  },
+  {
+    "id": 5,
+    "course_id": 2,
+    "name": "I2",
+    "pass": 4.0,
+    "goal": 5.0,
+    "grade": null
+  }]
 }
